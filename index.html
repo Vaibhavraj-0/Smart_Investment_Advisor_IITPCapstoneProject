@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Investment Advisor</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./stylev2.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <!-- HERO AREA WITH BACKGROUND -->
+    <main class="hero" role="main">
+      <!-- Top heading card -->
+      <section class="hero-card" aria-label="Smart Investment Advisor intro">
+        <div class="hero-card-content">
+          <h1>Smart Investment Advisor</h1>
+          <p class="hero-tagline">
+            A research-backed assistant that projects your wealth, adjusts for inflation, and guides you toward your goals.
+          </p>
+        </div>
+      </section>
+
+      <!-- Embedded app area -->
+      <section class="app-embed" aria-label="Embedded Smart Investment Advisor app">
+        <header class="app-embed-header">
+          <span class="app-pill">Wealth Monster</span>
+          <span class="app-embed-title">Interactive Smart Investment Advisor</span>
+        </header>
+
+        <!-- Set this to your deployed Streamlit URL when ready -->
+        <iframe
+          id="advisor-frame"
+          class="app-embed-frame"
+          src="https://smartinvestmentadvisoriitpcapstoneproject-aetwiup6w8zapzrfcd7e.streamlit.app/?embedded=true"  <!-- e.g. https://your-app.streamlit.app/ -->
+          title="Smart Investment Advisor App"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo" aria-label="Page footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <img src="./moneymonster.png" alt="Money Monster mascot" class="mascot-img" />
+        </div>
+
+        <div class="footer-center">
+          <a class="glossary-btn"
+             href="https://drive.google.com/file/d/1qjU0T2Yc6Axu-IQ_aOsLoOQ_KegYRRdI/view?usp=sharing"
+             target="_blank" rel="noopener">
+            Glossary
+          </a>
+        </div>
+
+        <div class="footer-right">
+          <span class="copyright">
+            © BBA Team 17 (Vaibhav Raj, Tarun Ranjan, Nikhil Raj, Kashish Roy, Swati) | All Rights Reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
